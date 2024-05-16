@@ -13,7 +13,7 @@
   <a href="#license">License</a>
 </p>
 
-![screenshot](https://github.com/GustavoSMafra/task-master/blob/main/imgs/task-master-home.png)
+![screenshot](https://github.com/GustavoSMafra/product-manager-mongoose/blob/main/imgs/product-mannager-api.png)
 
 ## Key Features
 
