@@ -146,7 +146,7 @@ router.post('/create', validateDataCreate, UserController.createUser);
  * @swagger
  * /v1/users/update/{id}:
  *   put:
- *     summary: Update a user
+ *     summary: Update an user
  *     tags: [Users]
  *     security:
  *       - BearerAuth: []

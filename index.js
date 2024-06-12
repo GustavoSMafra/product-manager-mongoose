@@ -2,7 +2,7 @@ const express = require("express");
 const mongoSanitize = require('express-mongo-sanitize');
 const firebaseAdmin = require('firebase-admin');
 const swaggerUi = require('swagger-ui-express');
-const swaggerSpec = require('./keys/swaggerConfig');
+const swaggerSpec = require('./config/swaggerConfig');
 
 const app = express();
 
@@ -23,7 +23,7 @@ app.use('/v1/users', userRoutes);
 app.use('/v1/products', productRoutes);
 app.use('/v1/images', imageRoutes);
 
-const serviceAccount = require("./serviceAccountKey.json");
+const serviceAccount = require("./keys/serviceAccountKey.json");
 firebaseAdmin.initializeApp({
     credential: firebaseAdmin.credential.cert(serviceAccount),
     storageBucket: "gs://products-mongoose.appspot.com"

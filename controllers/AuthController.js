@@ -12,7 +12,13 @@ module.exports = class AuthController {
                 if(result) {
                     const token = generateToken({id: user.id, email: user.email, name: user.name, admin: user.admin});
                     res.status(200).json({ 
-                        token: token 
+                        token: token,
+                        user: {
+                            id: user.id,
+                            email: user.email, 
+                            name: user.name,
+                            admin: user.admin
+                        }
                     });
                 } else {
                     res.status(400).json({

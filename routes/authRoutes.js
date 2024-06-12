@@ -30,6 +30,9 @@ const AuthController = require('../controllers/AuthController');
  *               properties:
  *                 token:
  *                   type: string
+ *                 user:
+ *                   type: Object
+ *                   $ref: '#/components/schemas/User'
  *       400:
  *         description: Bad Request (Check the problem in the API return)
  *       404:
